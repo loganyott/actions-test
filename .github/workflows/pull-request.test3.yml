@@ -1,6 +1,9 @@
-name: Test1
+name: Test3
 
-on: pull_request
+on:
+  pull_request:
+    paths:
+      - 'fakepath/**'
 jobs:
   required_check:
     runs-on: ubuntu-latest
