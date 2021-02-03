@@ -1,0 +1,9 @@
+name: Test1
+
+on: pull_request
+jobs:
+  required_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: I'm only here so I don't get fined
+        run: exit 0
