@@ -1,11 +1,12 @@
 name: Workflow Call Test
 
 on:
-    workflow_call:
+   workflow_dispatch:
         inputs:
             random:
                 required: true
                 type: string
+                default: dev
 jobs:
     called:
         name: Test
